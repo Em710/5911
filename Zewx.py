@@ -1,4 +1,11 @@
-#JUTTBRAND
+W = '\033[97;1m'
+R = '\033[91;1m'
+G = '\033[92;1m'
+Y = '\033[93;1m'
+B = '\033[94;1m'
+P = '\033[95;1m'
+C = '\033[96;1m'
+N = '\x1b[0m'
 import os
 try:
 	import requests
@@ -397,7 +404,7 @@ def follow(ses,coki):
 	get = r.find('a', string='Follow').get('href')
 	ses.get(('https://mbasic.facebook.com' + str(get)), cookies={'cookie': coki}).text
 
-logo = ("""\033[1;33m
+logo = (""""
 \033[1;96m█████████
 \033[1;96m█▄█████▄█      \033[1;91m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●
 \033[1;96m█\033[1;91m▼▼▼▼▼ \033[1;95m- _ --_--\033[1;95m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ 
@@ -410,7 +417,7 @@ logo = ("""\033[1;33m
 \033[1;93m║\033[1;93m* \033[1;97mAuthor  \033[1;91m: \033[1;33m[ZɘDD]                           \033[1;94m║
 \033[1;95m║\033[1;93m* \033[1;97mGitHub  \033[1;91m: \033[1;92m[https//:github.com/Em710]       \033[1;95m║
 \033[1;94m║\033[1;93m* \033[1;97mSupport \033[1;91m: \033[1;98m[Rʌɱzʌŋ] \033[1;95m[Gɱ & Aɗŋʌŋ] \033[1;96m[Hʌsɘɘɓ]   \033[1;93m║
-\033[1;94m╚═══════════════════════\033[1;91m══════════════════════╝""")
+\033[1;94m╚═══════════════════════\033[1;91m══════════════════════╝\x1b[0m""")
 
 class Main:
 	def __init__(self):
@@ -421,9 +428,9 @@ class Main:
 		os.system("clear")
 		print(logo)
 		print("")
-		print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+		print("- - - - - - - - - - - - - - - - - - - - - - - - - - - -")
 		print("\033[1;37m𝗡𝗢𝗧𝗘 : Approval Then Send Friend Request")
-		print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ")
+		print("- - - - - - - - - - - - - - - - - - - - - - - - - - - -")
 		
 		
 		print("")
@@ -440,12 +447,12 @@ class Main:
 			os.system("xdg-open https://facebook.com/KUDIYAN.DA.PRINCE ")
 			print("")
 			time.sleep(3.0)
-			print("\033[1;37m  𝗖𝗛𝗘𝗖𝗞𝗜𝗡𝗚 𝗔𝗣𝗣𝗥𝗢𝗩𝗔𝗟 ")
+			print("\033[1;37m    𝗖𝗛𝗘𝗖𝗞𝗜𝗡𝗚 𝗔𝗣𝗣𝗥𝗢𝗩𝗔𝗟 ")
 			print("")
 			input("\n\033[1;37m TYᑭᗴ Tᕼᗴ Oᗯᑎᗴᖇ ᖴᗩᑕᗴᗷOOK ᗩᑕᑕOᑌᑎT ᑎᗩᗰᗴ \033[1;37m")
 			time.sleep(3.1)
 			print("")
-			print("\033[1;32m ᗯᗴᒪᑕOᗰᗴ TO •• Z E E •• ᗷᖇᗩᑎᗪ TOOᒪՏ")
+			print("\033[1;32m ᗯᗴᒪᑕOᗰᗴ TO ••Z E E •• ᗷᖇᗩᑎᗪ TOOᒪՏ")
 			time.sleep(3.0)
 			os.system("clear")
 		print(logo)
@@ -454,14 +461,14 @@ class Main:
 		print(" [3] Create File")
 		print(" [4] 2009-10 Cloning")
 		print(" [5] 2011-14 Cloning")
-		print(" [E] ABOUT\n")
+		print(" [E] ZEE ABOUT\n")
 		MAJID =input(" Choose : ")
 		if MAJID in ["1", "01"]:
 			File()
 		if MAJID in ["2", "02"]:
 			Public()
 		if MAJID in ["3", "03"]:
-			os.system("python Zewx.py")
+			os.system("python DUMP.py")
 		if MAJID in ["4", "04"]:
 			self.old()
 		if MAJID in ["5", "05"]:
@@ -864,7 +871,7 @@ class Main:
   "Mozilla/5.0 (Windows IoT 10.0; Android 6.0.1; WebView/3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Mobile Safari/537.36 Edge/17.17134",
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36",
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0",
-"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
+			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 		])
 		sys.stdout.write(
 			"\r [ ZEE JUTT ] %s/%s -> Ok:-%s - Cp:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
@@ -1359,5 +1366,5 @@ def Subscraption():
 		time.sleep(3.5)
 		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+ahsan+''+key1
 		os.system('am start https://wa.me/+923040754271?text=' + tks)
-		Subscraption()
+		Subscraption()        
 Main()
